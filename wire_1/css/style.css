@@ -29,24 +29,45 @@ body {
     font-size: 1.2rem;
 }
 
+/* 공통 요소 */
+.container {
+    position: relative;
+    display: block;
+}
+
 /* 전체 레이아웃 */
 .wrap {
     position: relative;
     display: block;
     width: 100%;
 }
+
 /* 상단 */
 .header {
-    position:relative;
+    position: relative;
     display: block;
 }
+
 /* 메인 */
 .contents {
-    position:relative;
+    position: relative;
     display: block;
 }
+
+/* 슬라이드 */
+.slide {
+    position: relative;
+    display: block;
+}
+
+/* 커뮤니티 */
+.comm {
+    position: relative;
+    display: block;
+}
+
 /* 하단 */
 .footer {
-    position:relative;
+    position: relative;
     display: block;
 }
