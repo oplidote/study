@@ -1,0 +1,197 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+/* 공통요소 */
+.container {
+    position: relative;
+    display: block;
+}
+
+/* 전체레이아웃 */
+.wrap {
+    position: relative;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 상단 */
+.header {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100px;
+    z-index: 9999;
+}
+
+.header .container {
+    width: 100%;
+    height: 100%;
+    background-color: lemonchiffon;
+    
+}
+.logo {
+    position: absolute;
+    left: 0;
+    width: 120px;
+    top: 0;
+    display: block;
+    background-color: #000;
+    color:#fff;
+    line-height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: absolute;
+    display: block;
+    width: 800px;
+    bottom: 0;
+    top: 100%;
+    margin-top:-50px;
+    
+    right: 30px;
+    
+}
+
+.gnb {
+    position: relative;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    background-color: black;
+}
+
+.gnb>li {
+    width: 25%;
+    float: left;
+    position: relative;
+    display: block;
+}
+
+.gnb>li>a {
+    line-height: 50px;
+    color: #fff;
+    position: relative;
+    display: block;
+}
+
+.submenu {
+    position: relative;
+    display: block;`
+}
+
+.submenu li {
+    position: relative;
+    display: block;
+}
+
+.submenu li a {
+    color: #fff;
+    line-height: 40px;
+}
+
+/* 메인 */
+.main {
+    position: relative;
+    display: block;
+}
+
+.main>section {
+    position: relative;
+    display: block;
+}
+
+.visual {
+    position: relative;
+    display: block;
+}
+
+.visual .container {}
+
+.comm {
+    position: relative;
+    display: block;
+}
+
+.comm .container {}
+
+.comm .container>section {
+    position: relative;
+    display: block;
+}
+
+.notice {
+    position: relative;
+    display: block;
+}
+
+.gall {
+    position: relative;
+    display: block;
+}
+
+.link {
+    position: relative;
+    display: block;
+}
+
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+}
+
+.footer .container {}
+
+.footer .container>div {}
+
+.ft_left {
+    position: relative;
+    display: block;
+}
+
+.ft_left section {
+    position: relative;
+    display: block;
+}
+
+.ft_right {
+    position: relative;
+    display: block;
+}
+
+.ft_site {
+    position: relative;
+    display: block;
+}
