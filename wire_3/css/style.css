@@ -1,0 +1,211 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* outline-style:none */
+}
+a {
+    color:#333;
+    text-decoration: none;
+    text-align: center;
+}
+li {
+    list-style:none;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+}
+html {
+    font-size: 10px;
+}
+body {
+    font-size: 1.2rem;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1200px;
+    margin: 0 auto;
+}
+/* 전체레이아웃 */
+.wrap {
+    position: relative;
+    display: block;
+}
+/* 상단 */
+.header {
+    position: relative;
+    display: block;
+    height: 100px;
+    z-index: 999;
+}
+.header .container {
+    height: 100%;
+    background-color: purple;
+    margin: 0 auto;
+}
+
+.logo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    line-height: 100px;
+    text-align: center;
+
+}
+.nav {
+    position: absolute;
+    display: block;
+    right: 30px;
+    top : 20px;
+}
+.gnb {
+    position: relative;
+    display: block;
+    width: 800px;
+    overflow: hidden;
+    
+}
+.gnb > li {
+    float: left;
+    background-color: #000;
+    width: 25%;
+    position: relative;
+    display: block;
+    text-align: center;
+}
+.gnb > li > a{
+    position: relative;
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+
+}
+.submenu {
+    position: relative;
+    display: none;
+}
+.submenu > li > a {
+    position: relative;
+    display: block;
+    color: #fff;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+.gnb > li:hover > .submenu{
+    display: block;
+}
+.gnb > li:hover > a {
+    background-color: red;
+}
+.gnb a:hover {
+    background-color: red;
+}
+/* 메인 */
+.main {
+    position: relative;
+    display: block;
+}
+
+.visual {
+    position: relative;
+    display: block;
+}
+.visual .container {
+    height: 300px;
+    background-color: orange;
+}
+.comm {
+    position: relative;
+    display: block;
+}
+.comm .container {
+    overflow: hidden;
+    height: 200px;
+}
+
+.comm .container > section {
+    float: left;
+    height: 100%;
+    width: 400px;
+}
+.notice {
+    position: relative;
+    display: block;
+    background-color: red;
+}
+.banner {
+    position: relative;
+    display: block;
+    background-color: green;
+}
+.link {
+    position: relative;
+    display: block;
+    background-color: yellow;
+}
+/* 하단 */
+.footer {
+    position: relative;
+    display: block;
+}
+.footer .container {
+    overflow: hidden;
+    height: 100px;
+}
+.footer .container div {
+    position: relative;
+    display: block;
+    float: left;
+    height: 100%;
+}
+.footer div > section {
+}
+.footer-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 200px;
+    background-color: #000;
+}
+.footer-logo {
+    text-align: center;
+    line-height: 100px;
+}
+.footer-logo a {
+    color: #fff;
+
+}
+
+.footer-right {
+    width: 1000px;
+    height: 100%;
+    right: 0;
+    position: absolute;
+    display: block;
+    background-color: lemonchiffon;
+}
+.footer-right > section{
+    position: relative;
+    display: block;
+    height: 50%;
+    text-align: center;
+    line-height: 50px;
+}
+.footer-menu {
+    background-color: rgb(174, 106, 177);
+}
+.footer-copy {
+    background-color: blue;
+}
+

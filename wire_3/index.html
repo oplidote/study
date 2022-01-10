@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="utf-8">
-    <title>wireframe-4</title>
-            <!--[if  lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
+    <title>wire_3</title>
+    <!--[if lt IE 9]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    <!-- 전체 레이아웃 -->
+    <!-- 전체레이아웃 -->
     <div class="wrap">
-        <!-- 상단 -->
-        <header class = "header">
+        <!-- 상단영역 -->
+        <header class="header">
             <div class="container">
-                <div class="logo">
-                    <a href="#">logo</a>
-                </div>
-                <nav class = "nav">
-                    <ul class = "gnb">
-                        <li class = "mainmenu">
-                            <a href="">MENU-1</a>
-                            <ul class ="submenu">
+                <a href="index.html" class="logo">로고</a>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">MENU-1</a>
+                            <ul class="submenu">
                                 <li>
-                                    <a href="#">sub1</a>
+                                    <a href="#">SubMenu-1</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub2</a>
+                                    <a href="#">SubMenu-2</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub3</a>
+                                    <a href="#">SubMenu-3</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub4</a>
+                                    <a href="#">SubMenu-4</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class = "mainmenu">
-                            <a href="">MENU-2</a>
-                            <ul class ="submenu">
+                        <li>
+                            <a href="#">MENU-2</a>
+                            <ul class="submenu">
                                 <li>
-                                    <a href="#">sub1</a>
+                                    <a href="#">SubMenu-1</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub2</a>
+                                    <a href="#">SubMenu-2</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub3</a>
+                                    <a href="#">SubMenu-3</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub4</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class = "mainmenu">
-                            <a href="">MENU-3</a>
-                            <ul class ="submenu">
-                                <li>
-                                    <a href="#">sub1</a>
-                                </li>
-                                <li>
-                                    <a href="#">sub2</a>
-                                </li>
-                                <li>
-                                    <a href="#">sub3</a>
-                                </li>
-                                <li>
-                                    <a href="#">sub4</a>
+                                    <a href="#">SubMenu-4</a>
                                 </li>
                             </ul>
                         </li>
-                        <li class = "mainmenu">
-                            <a href="">MENU-4</a>
-                            <ul class ="submenu">
+                        <li>
+                            <a href="#">MENU-3</a>
+                            <ul class="submenu">
                                 <li>
-                                    <a href="#">sub1</a>
+                                    <a href="#">SubMenu-1</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub2</a>
+                                    <a href="#">SubMenu-2</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub3</a>
+                                    <a href="#">SubMenu-3</a>
                                 </li>
                                 <li>
-                                    <a href="#">sub4</a>
+                                    <a href="#">SubMenu-4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MENU-4</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="#">SubMenu-1</a>
+                                </li>
+                                <li>
+                                    <a href="#">SubMenu-2</a>
+                                </li>
+                                <li>
+                                    <a href="#">SubMenu-3</a>
+                                </li>
+                                <li>
+                                    <a href="#">SubMenu-4</a>
                                 </li>
                             </ul>
                         </li>
@@ -90,47 +91,52 @@
                 </nav>
             </div>
         </header>
-        <!-- 컨텐츠 -->
+
+        <!-- 메인영역 -->
         <div class="main">
-            <!-- 비주얼 -->
-            <div class="visual">
-                    <div class="container">
-                    <h3>이미지슬라이드</h3>
-                </div>
-            </div>
-            <!-- 커뮤니티 -->
-            <div class="comm">
+            <!-- 비주얼영역 -->
+            <section class="visual">
                 <div class="container">
-                    <section class = "notice">
-                        <h3>공지사항</h3>
+                    <h2>이미지슬라이드</h2>
+                </div>
+            </section>
+            <!-- 커뮤니티 -->
+            <section class="comm">
+                <div class="container">
+                    <section class="notice">
+                        <h3>공지사항/갤러리</h3>
                     </section>
-                    <section class = "gallery">
-                        <h3>갤러리</h3>
+                    <section class="banner">
+                        <h3>배너</h3>
                     </section>
-                    <section class = "link">
+                    <section class="link">
                         <h3>바로가기</h3>
                     </section>
                 </div>
-            </div>
+            </section>
+
         </div>
-        <!-- 하단 -->
-        <footer>
+        <!-- 하단영역 -->
+        <footer class="footer">
             <div class="container">
+                <!-- 로고 -->
                 <div class="footer-left">
-                    <div class="footer-menu">
-                        <h3>하단메뉴</h3>
-                    </div>
-                    <div class="footer-copy">
-                        <h3>Copyright</h3>
-                    </div>
+                    <section class="footer-logo">
+                        <a href="index.html">로고</a>
+                    </section>
                 </div>
+                <!-- 메뉴 -->
                 <div class="footer-right">
-                    <div class="footer-link">
-                        <h3>패밀리사이트</h3>
-                    </div>
+                    <section class="footer-menu">
+                        <h3>하단메뉴</h3>
+                    </section>
+                    <section class="footer-copy">
+                        <h3>Copyright</h3>
+                    </section>
                 </div>
             </div>
         </footer>
     </div>
 </body>
+
 </html>
