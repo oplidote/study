@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'NotoSansLight';
+    font-style: normal;
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url(font/NotoSansKrLight.eot),
+    url(font/NotoSansKrLight.eot?#iefix) format('embedded-opentype'),
+    url(font/NotoSansKrLight.woff) format('woff'),
+    url(font/NotoSansKrLight.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansDemiLight';
+    font-style: normal;
+    src: local('Noto Sans Demi Light'), local('NotoSans-DemiLight'),
+    url(font/NotoSansKrDemiLight.eot),
+    url(font/NotoSansKrDemiLight.eot?#iefix) format('embedded-opentype'),
+    url(font/NotoSansKrDemiLight.woff) format('woff'),
+    url(font/NotoSansKrDemiLight.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansRegular';
+    font-style: normal;
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(font/NotoSansKrRegular.eot),
+    url(font/NotoSansKrRegular.eot?#iefix) format('embedded-opentype'),
+    url(font/NotoSansKrRegular.woff) format('woff'),
+    url(font/NotoSansKrRegular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansMedium';
+    font-style: normal;
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(font/NotoSansKrMedium.eot),
+    url(font/NotoSansKrMedium.eot?#iefix) format('embedded-opentype'),
+    url(font/NotoSansKrMedium.woff) format('woff'),
+    url(font/NotoSansKrMedium.otf) format('opentype');
+}
+@font-face {
+    font-family: 'NotoSansBold';
+    font-style: normal;
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(font/NotoSansKrBold.eot),
+    url(font/NotoSansKrBold.eot?#iefix) format('embedded-opentype'),
+    url(font/NotoSansKrBold.woff) format('woff'),
+    url(font/NotoSansKrBold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'OpenSansLight';
+    font-style: normal;
+    src: local('Open Sans Light'), local('OpenSans-Light'),
+    url(font/OpenSansLight.eot),
+    url(font/OpenSansLight.eot?#iefix) format('embedded-opentype'),
+    url(font/OpenSansLight.woff) format('woff'),
+    url(font/OpenSansLight.otf) format('opentype');
+}
+@font-face {
+    font-family: 'OpenSansRegular';
+    font-style: normal;
+    src: local('OpenSansRegular'), local('OpenSans-Regular'),
+    url(font/OpenSansRegular.eot),
+    url(font/OpenSansRegular.eot?#iefix) format('embedded-opentype'),
+    url(font/OpenSansRegular.woff) format('woff'),
+    url(font/OpenSansRegular.otf) format('opentype');
+}
+@font-face {
+    font-family: 'OpenSansSemibold';
+    font-style: normal;
+    src: local('OpenSansSemibold'), local('OpenSans-Semibold'),
+    url(font/OpenSansSemibold.eot),
+    url(font/OpenSansSemibold.eot?#iefix) format('embedded-opentype'),
+    url(font/OpenSansSemibold.woff) format('woff'),
+    url(font/OpenSansSemibold.otf) format('opentype');
+}
+@font-face {
+    font-family: 'OpenSansbold';
+    font-style: normal;
+    src: local('OpenSansbold'), local('OpenSans-bold'),
+    url(font/OpenSansbold.eot),
+    url(font/OpenSansbold.eot?#iefix) format('embedded-opentype'),
+    url(font/OpenSansbold.woff) format('woff'),
+    url(font/OpenSansbold.otf) format('opentype');
+}

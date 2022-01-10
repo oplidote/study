@@ -1,0 +1,206 @@
+<!-- html 5 ver 로 해석 -->
+<!-- !DOCTYPE 대 소 구분없음. DOCTYPE 관례적으로 대문자 사용 -->
+<!DOCTYPE html> 
+<!-- Tag<> 안 모두 소문자 필수적 관례 -->
+<html lang="ko">
+<!-- <> : tag lang : 속성 (어트리부트) ko : 속성값 -->
+    <head>
+        <!-- utf 대 소 무관 -->
+        <meta charset="utf-8">
+        <!-- title 필수 작성 -->
+        <title>STX 건설</title>
+    </head>
+    <body>
+        <h1>STX 건설 메인</h1>
+        <!-- 상단 영역 h1 = heading1
+        h1 은 html 문서에 한번만 표기 및 사용
+        h2 는 여러번 사용 가능-->
+        <form action="join.jsp" method="post">
+            <fieldset>
+                <legend>기본정보</legend>
+                <!-- label for : 포커싱 (라벨 클릭 시 포커싱)-->
+                <label for="userid">아이디</label><input id="userid" type="text" maxlength = "8" placeholder="아이디" size="10" name="userid"> <button>아이디 중복 확인</button></button><br>
+                <label for="userpass">비밀번호</label><input id="userpass" type="password" maxlength="16" placeholder="패스워드" size="10" name="userpass"> <br>
+                <label for="userpass2">비밀번호 확인</label><input id="userpass2" type="password" maxlength="16" placeholder="패스워드 확인" size="10" disabled="disabled" name="userpass2"> <br>
+                <!-- disabled : 비활성화 -->
+            </fieldset>
+            <fieldset>
+                <legend>부가정보</legend>
+                <p>
+                    <input type="checkbox" value="html" checked="checked" name="html"> html
+                    <input type="checkbox" value="css" checked="checked" name="css"> css
+                    <input type="checkbox" value="js" checked="checked" name="js"> js
+                </p>
+                <p>
+                    <input type="radio" name="level" checked="checked" value = "초" >초급
+                    <input type="radio" name="level" value = "중" >중급
+                    <input type="radio" name="level" value = "고" >고급
+                </p>
+                <!-- radio : 중복선택 불가 name 태그 속성값 일치 시 -->
+                <!--  checkbox : 중복선택 가능-->
+                <p>
+                    <input type="file" name="userimg">
+                </p>
+                <p>
+                    <select name="hobby">
+                        <option value="1">coding</option>
+                        <option value="2">game</option>
+                        <option value="3">reading</option>
+                    </select>
+                </p>
+                <p>
+                    <!-- textarea don't enter key -->
+                    <textarea name="word" id="" cols="30" rows="10"></textarea>
+                </p>
+                <p>
+                    <input type="reset" value ="재작성">
+                    <input type="submit" value ="작성완료">
+                    <input type="image" src="http://placeimg.com/50/50/tech/sepia">
+                </p>
+            </fieldset>
+        </form>
+        <h2>문서 상단</h2>
+        <p>
+            <!-- * <a> = anchor -->
+            <a href="index.html" title = "STX 건설">로고</a>
+            <a href="#foot">메뉴 1</a>
+            <a href="company.html">메뉴 2</a>
+            <a href="http://naver.com" target="_blank">메뉴 3</a>
+            <a href="asset/data.zip">메뉴 4</a>
+            <a href="mailto:aaa@naver.com">메뉴 5</a>
+            <a href="tel:053-666-6666">메뉴 6</a>
+        </p>
+        <!-- 비주얼 영역 -->
+        <h2>비주얼 영역</h2>
+        <p>
+            <!-- img 태그 사용 시 alt -->
+            <img src="http://placeimg.com/1000/480/arch" alt="아키텍쳐">
+        </p>
+        <!-- 사업 영역 -->
+        <h2>사업 영역</h2>
+        <h3>사업 영역 소제목</h3>
+        <h4>사업 파트</h4>
+        <h4>사업 파트</h4>
+        <h4>사업 파트</h4>
+        <h4>사업 파트</h4>
+        <h4>사업 파트</h4>
+        <!-- 뉴스 영역 -->
+        <h2>뉴스 영역</h2>
+        <p>
+            <!-- BGM 자제 -->
+            <audio autoplay="autoplay" loop="loop">
+                <!-- 트래픽 효율성을 위한 type 태그 사용 -->
+                <source src="asset/sound.ogg" type="audio/ogg">
+                <source src="asset/sound.mp3" type="audio/mp3">
+                <source src="asset/sound.wav" type="audio/wav">
+            </audio></p>
+            <video controls="controls" autoplay="autoplay" loop="loop" poster="asset/movie/sample.png">
+                <source src = "asset/movie/sample.mp4">
+            </video>
+        <h3>공지사항</h3>
+            Lorem ipsum dolor sit, <br><br><br>
+            a &nbsp;met <br>
+            <!-- 
+                * &nbsp; = 중복 띄움 
+                * <br> = 개행 문자 
+            -->
+
+            <strong>consectetur</strong> <br>
+            <b>adipisicing</b> <br> 
+            elit. <br> 
+            <small>Totam</small>dolores 
+            <sup>commodi</sup>
+            <sub>iusto</sub>
+            <del> ullam</del>
+            <em> ex harum</em>
+            
+            <!-- 
+                * <strong> : 내용 상 의미가 중요하여 강조가 필요한 부분
+                *  <b> : bold 체 (의미와 무관하게 굵기)
+                * <small>  : 작게
+                * <sup> : 윗천자
+                * <sub> : 밑
+                * <del> : 줄그임
+                * <em> : 기울임체
+            -->
+            </p>
+            <h3>보도자료</h3>
+            <p>
+                <ol> <!-- order list-->
+                    <li>보도자료1</li> <!-- list item -->
+                    <li>보도자료2</li>
+                    <li>보도자료3</li>
+                    <li>보도자료4</li>
+                </ol>
+                <ul> <!-- unorder list       중요 -->
+                    <li>보도자료1</li>
+                    <li>보도자료2</li>
+                    <li>보도자료3</li>
+                    <li>보도자료4</li>
+                </ul>
+                <dl> <!-- description list-->
+                    <dt>html</dt> <!-- description title-->
+                    <dd>웹용 문서 포맷</dd> <!-- description data-->
+                    <dd>기본문서</dd>
+                    <dt>css</dt>
+                    <dd>레이아웃</dd>
+                    <dd>문서 디자인</dd>
+                </dl>
+                <!-- ul ol 과 li 사이에는 어떤 태그도 오면 안된다.-->
+            </p>
+            <h2>서비스 영역</h2>
+            <table border = "2" width= "100%" cellpadding = "15" cellspacing="5">
+                <colgroup>
+                    <col width = "80">
+                    <col width = "*">
+                    <col width = "80">
+                    <col width = "120">
+                </colgroup>
+                <tr>
+                    <th>글번호</th>
+                    <th>제목</th>
+                    <th>조회수</th>
+                    <th>날짜</th>
+                </tr>
+                <tr>
+                    <td rowspan="2">5</td>
+                    <td>간략한 내용5</td>
+                    <td colspan = "2">123</td>
+                    <!-- <td>2022-01-03</td> -->
+                </tr>
+                <tr>
+                    <!-- <td>4</td> -->
+                    <td>간략한 내용4</td>
+                    <td>123</td>
+                    <td>2022-01-03</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>간략한 내용3</td>
+                    <td>123</td>
+                    <td>2022-01-03</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>간략한 내용2</td>
+                    <td>123</td>
+                    <td>2022-01-03</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>간략한 내용1</td>
+                    <td>123</td>
+                    <td>2022-01-03</td>
+                </tr>
+            </table>
+        <!-- 소개 영역 -->
+        <h2>소개 영역
+            <p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/sqgxcCjD04s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </p>
+        </h2>
+        <!-- 하단 영역 -->
+        <h2 id ="foot"></h2>
+        <!-- <h7></h7>은 존재 하지 않는다. -->
+    </body>
+</html>
