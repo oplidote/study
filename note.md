@@ -13,6 +13,11 @@
   .gif : (포토샵 - 애니메이션 그림)
   .svg : (일러스트레이터 - vector 그림)
 
+## IE에서 edge 브라우저 형태로 강제 렌더링 하도록하는  메타태그
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+웹 필수 구성요소 이다.
+
+
 ## div : block
 # 미디어쿼리 주의사항
 1. css 속성 상속

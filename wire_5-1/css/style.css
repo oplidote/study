@@ -16,6 +16,12 @@ li {
     list-style: none;
 }
 
+img {
+    border: 0;
+    vertical-align: middle;
+    /* 이미지 중앙 정렬 */
+}
+
 html {
     font-size: 10px;
 }
@@ -24,7 +30,7 @@ body {
     font-size: 1.2rem;
 }
 
-/* 공통 요소 */
+/* 공통요소 */
 .container {
     position: relative;
     display: block;
@@ -43,12 +49,13 @@ body {
     display: block;
     width: 100%;
     height: 100px;
+    background-color: skyblue;
     z-index: 999;
 }
 
 .header .container {
     height: 100%;
-    background-color: skyblue;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -56,21 +63,16 @@ body {
     left: 0;
     top: 0;
     display: block;
-    width: 120px;
-    height: 100px;
+    width: 12rem;
+    height: 100%;
     background-color: #000;
-    text-align: center;
-    line-height: 100px;
-    color: #fff;
 }
 
 .nav {
     position: absolute;
-    top: 100%;
-
+    right: 40px;
+    top: 30px;
     display: block;
-    width: 100%;
-    background-color: gray;
 }
 
 .gnb {
@@ -78,24 +80,21 @@ body {
     display: block;
     width: 800px;
     overflow: hidden;
-    float: right;
-    margin-right: 40px;
-    margin-top: -50px;
 }
 
 .gnb>li {
     position: relative;
     display: block;
     width: 25%;
-    float: left;
     background-color: #000;
+    float: left;
 }
 
 .gnb>li>a {
     position: relative;
     display: block;
-    text-align: center;
     line-height: 50px;
+    text-align: center;
     color: #fff;
     text-transform: uppercase;
 }
@@ -113,24 +112,22 @@ body {
 .submenu li a {
     position: relative;
     display: block;
-    text-align: center;
     line-height: 40px;
+    text-align: center;
     color: #fff;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 
 .gnb a:hover {
-    background-color: red;
+    background-color: crimson;
 }
 
-/* 주메뉴 포커스 유지 */
-.gnb>li:hover>a {
-    background-color: red;
+.gnb li:hover>a {
+    background-color: crimson;
 }
-/* 메인 */
 
 /* 메인 */
-.main {
+.content {
     position: relative;
     display: block;
 }
@@ -138,13 +135,13 @@ body {
 .visual {
     position: relative;
     display: block;
+    height: 300px;
     overflow: hidden;
 }
 
 .visual .container {
-    width: 100%;
-    height: 300px;
-    background-color: pink;
+    height: 100%;
+    background-color: hotpink;
 }
 
 .comm {
@@ -156,7 +153,7 @@ body {
     overflow: hidden;
 }
 
-.comm .container > section {
+.comm .container>section {
     position: relative;
     display: block;
     width: 400px;
@@ -168,63 +165,61 @@ body {
     background-color: red;
 }
 
-.gall {
+.banner {
     background-color: green;
 }
 
 .link {
     background-color: blue;
 }
+
 /* 하단 */
 .footer {
     position: relative;
     display: block;
+    height: 100px;
+    background-color: violet;
 }
 
 .footer .container {
-    overflow: hidden;
+    height: 100%;
 }
 
-.footer .container>div {
-}
-
-.ft_left {
+.f-left {
+    position: relative;
+    display: block;
+    width: 120px;
+    height: 100%;
     float: left;
-    width: 1000px;
-    height: 100px;
-    position: relative;
-    display: block;
+    background-color: yellow;
 }
 
-.ft_left section {
-    position: relative;
-    display: block;
-}
-.footer_menu {
+.f-logo {
     position: relative;
     display: block;
     width: 100%;
+    line-height: 100px;
+}
+
+.f-right {
+    position: relative;
+    display: block;
+    width: 1080px;
+    height: 100%;
+    float: right;
+    background-color: gray;
+}
+
+.f-menu {
+    position: relative;
+    display: block;
+    height: 50%;
+    background-color: green;
+}
+
+.f-copy {
+    position: relative;
+    display: block;
     height: 50%;
     background-color: pink;
-    text-align: center;
-}
-.footer_copy {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 50%;
-    background-color: blue;
-    text-align: center;
-}
-.ft_right {
-    position: relative;
-    display: block;
-    height: 100px;
-    width: 200px;
-}
-
-.ft_site {
-    position: relative;
-    display: block;
-    background-color: purple;
 }
