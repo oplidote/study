@@ -1,0 +1,194 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.2rem;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1000px;
+
+    overflow: hidden;
+}
+
+.left {
+    position: relative;
+    display: block;
+    width: 200px;
+    float: left;
+    background-color: pink;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: relative;
+    display: block;
+}
+
+.lnb {
+    position: relative;
+    display: block;
+}
+
+.lnb>li {
+    position: relative;
+    display: block;
+    background-color: #000;
+}
+
+.lnb>li>a {
+    position: relative;
+    display: block;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.submenu {
+    position: relative;
+    display: none;
+}
+
+.submenu li {
+    position: relative;
+    display: block;
+}
+
+.submenu li a {
+    position: relative;
+    display: block;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+}
+
+.lnb a:hover {
+    background-color: red;
+}
+
+.lnb>li:hover > a {
+    background-color: red;
+}
+
+.lnb>li:hover .submenu {
+    display: block;
+}
+
+
+
+.right {
+    position: relative;
+    display: block;
+    width: 800px;
+    float: right;
+    background-color: greenyellow;
+}
+
+.visual {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: hotpink;
+    overflow: hidden;
+}
+.comm {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+.comm div {
+    position: relative;
+    display: block;
+    width: 33.33%;
+    height: 200px;
+    float: left;
+}
+.notice {
+    background-color: red;
+}
+.banner {
+    background-color: green;
+}
+.link {
+    background-color: blue;
+    width: 33.34% !important; 
+}
+.footer {
+    position: relative;
+    display: block;
+    height: 100px;
+}
+.f-left {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100%;
+    background-color: yellow;
+    float: left;
+}
+.f-logo {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+    text-align: center;
+}
+.f-right {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 100%;
+    background-color: hotpink;
+    float: right;
+}
+.f-menu,.f-copy {
+    position: relative;
+    display: block;
+    height: 50%;
+    border: 3px solid #000;
+}
