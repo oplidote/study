@@ -16,11 +16,6 @@ li {
     list-style: none;
 }
 
-img {
-    border: 0;
-    vertical-align: middle;
-}
-
 html {
     font-size: 10px;
 }
@@ -29,18 +24,17 @@ body {
     font-size: 1.2rem;
 }
 
-/* 공통요소 */
+/* 공통 요소 */
 .container {
-    position: relative;
-    display: block;
-}
-
-/* 전체레이아웃 */
-.wrap {
     position: relative;
     display: block;
     width: 1200px;
     margin: 0 auto;
+}
+
+.wrap {
+    position: relative;
+    display: block;
 }
 
 /* 상단 */
@@ -49,61 +43,62 @@ body {
     display: block;
     width: 100%;
     height: 100px;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .header .container {
-    width: 100%;
     height: 100%;
-    background-color: lemonchiffon;
-    
+    background-color: skyblue;
 }
+
 .logo {
     position: absolute;
     left: 0;
-    width: 120px;
     top: 0;
     display: block;
+    width: 120px;
+    height: 100px;
     background-color: #000;
-    color:#fff;
-    line-height: 100px;
     text-align: center;
-    text-transform: uppercase;
+    line-height: 100px;
+    color: #fff;
 }
 
 .nav {
     position: absolute;
-    display: block;
-    width: 800px;
-    bottom: 0;
+    right: 0px;
     top: 100%;
-    margin-top:-50px;
-    
-    right: 30px;
-    
+
+    display: block;
+    width: 100%;
+    background-color: gray;
 }
 
 .gnb {
     position: relative;
     display: block;
-    width: 100%;
+    width: 800px;
     overflow: hidden;
-    text-align: center;
-    background-color: black;
+    float: right;
+    margin-right: 40px;
+    margin-top: -50px;
 }
 
 .gnb>li {
-    width: 25%;
-    float: left;
     position: relative;
     display: block;
+    width: 25%;
+    float: left;
+    background-color: #000;
 }
 
 .gnb>li>a {
-    line-height: 50px;
-    color: #fff;
     position: relative;
     display: block;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 .submenu {
@@ -117,9 +112,23 @@ body {
 }
 
 .submenu li a {
-    color: #fff;
+    position: relative;
+    display: block;
+    text-align: center;
     line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
 }
+
+.gnb a:hover {
+    background-color: red;
+}
+
+/* 주메뉴 포커스 유지 */
+.gnb>li:hover>a {
+    background-color: red;
+}
+/* 메인 */
 
 /* 메인 */
 .main {
@@ -127,56 +136,64 @@ body {
     display: block;
 }
 
-.main>section {
-    position: relative;
-    display: block;
-}
-
 .visual {
     position: relative;
     display: block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
 }
 
-.visual .container {}
+.visual .container {
+    height: 100%;
+    background-color: pink;
+}
 
 .comm {
     position: relative;
     display: block;
 }
 
-.comm .container {}
+.comm .container {
+    overflow: hidden;
+}
 
-.comm .container>section {
+.comm .container > section {
     position: relative;
     display: block;
+    width: 400px;
+    height: 200px;
+    float: left;
 }
 
 .notice {
-    position: relative;
-    display: block;
+    background-color: red;
 }
 
 .gall {
-    position: relative;
-    display: block;
+    background-color: green;
 }
 
 .link {
-    position: relative;
-    display: block;
+    background-color: blue;
 }
-
 /* 하단 */
 .footer {
     position: relative;
     display: block;
 }
 
-.footer .container {}
+.footer .container {
+    overflow: hidden;
+}
 
-.footer .container>div {}
+.footer .container>div {
+}
 
 .ft_left {
+    float: left;
+    width: 1000px;
+    height: 100px;
     position: relative;
     display: block;
 }
@@ -185,13 +202,31 @@ body {
     position: relative;
     display: block;
 }
-
+.footer_menu {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: pink;
+    text-align: center;
+}
+.footer_copy {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-color: blue;
+    text-align: center;
+}
 .ft_right {
     position: relative;
     display: block;
+    height: 100px;
+    width: 200px;
 }
 
 .ft_site {
     position: relative;
     display: block;
+    background-color: purple;
 }
