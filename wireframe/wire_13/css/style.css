@@ -27,24 +27,30 @@ html {
 
 body {
     font-size: 1.2rem;
+    background-color: yellowgreen;
 }
+
 .container {
     position: relative;
     display: block;
     margin: 0 auto;
-    padding:0;
+    padding: 0;
     width: 100%;
 }
+
 .wrap {
     position: relative;
     display: block;
 }
 
 .header {
-    position: relative;
+    position: fixed;
     display: block;
+    width: 100%;
     background-color: #222;
     border-radius: 0 0 15px 15px;
+    z-index: 999;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
 }
 
 .header .container {
@@ -100,7 +106,6 @@ body {
 .submenu {
     position: relative;
     display: block;
-    width: 100%;
 }
 
 .submenu li {
@@ -114,21 +119,23 @@ body {
 .submenu li a {
     position: relative;
     display: block;
-    color:#fff;
+    color: #fff;
     font-size: 1.7rem;
 }
+
 .submenu li:last-child {
     height: 65px;
     border-radius: 0 0 15px 15px;
 }
+
 .gnb>li:hover>a {
-    color:yellowgreen;
+    color: yellowgreen;
 }
-.gnb>li:hover> .submenu li {
-    display: block;
-}
+
 .gnb .submenu li:hover a {
-    color:yellowgreen;
+    color: yellowgreen;
+}.gnb li:hover .submenu li{
+    display: block;
 }
 .main {
     position: relative;
@@ -141,26 +148,74 @@ body {
 }
 
 .visual .container {
+    padding-top: 80px;
     position: relative;
     display: block;
+    width: 100%;
+    overflow: hidden;
+    height: 600px;
+    background-color: rgba(0,0,0,0.1);
 }
-
+.visual span {
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    width: 1200px;
+    height: 100%;
+    background: url('../images/slide_sample.webp') no-repeat;
+    background-size: cover;
+    background-position: 0px -50px;
+}
 .comm {
     position: relative;
     display: block;
 }
 
 .comm .container {
+    overflow: hidden;
+    width: 1200px;
+    padding:10px;
+}
+.comm .container div{
+    margin:10px 0 10px;
+    width: calc(50% - 20px);
+    height: 250px;
+    background-color:#222;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+.notice {
     position: relative;
     display: block;
+    float: left;
+}
+.gall {
+    position: relative;
+    display: block;
+    float: right;
 }
 
 .footer {
     position: relative;
     display: block;
+    width: 100%;
+    background-color: #222;
+    bottom: 0;
 }
 
 .footer .container {
+    width: 1200px;
+    height: 200px;
+}
+.footer-logo {
+    padding-left:20px;
     position: relative;
+    line-height: 200px;
     display: block;
+    float: left;
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
 }
