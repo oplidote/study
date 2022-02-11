@@ -1,0 +1,40 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+html {
+    font-size: 30px;
+    /* overflow-x: hidden; */
+}
+
+body {
+    font-size: 1rem;
+}
+
+/* 공통 요소 */
+.clearfix::after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear:both;
+}
+.container {}
