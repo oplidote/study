@@ -1,2 +1,11 @@
-// new 생성자(constructor)함수를 이용한 객체생성
-// 객체 생성자 함수
+let num = new Number(10);
+console.log(num);
+
+let num2 = 10;
+console.log(num2);
+
+let str = new String('hi');
+console.log(str);
+
+let str2 = 'hi';
+console.log(str2);
