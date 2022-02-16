@@ -3,36 +3,43 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
+    <meta http-equiv="X-UACompatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <title>Document</title>
     <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-        <![endif]-->
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
     <script src="js/prefixfree.min.js"></script>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <script src="js/script.js"></script>
+
+    <style>
+        #wrap {
+            background-color: red;
+            padding: 50px;
+        }
+        #inner {
+            background-color: green;
+            padding: 50px;
+        }
+        #box {
+            width: 300px;
+            height: 300px;
+            background-color: yellow;
+            padding: 50px;
+        }
+    </style>
 
 </head>
+
 <body>
-    <div class="wrap">
-        <!-- 상단 -->
-        <header class="header">
-
-        </header>
-        <!--// 상단 -->
-        <!-- 메인 -->
-        <div class="content">
-
-        </div>
-        <!--// 메인 -->
-        <!-- 하단 -->
-        <footer class="footer">
-
-        </footer>
-        <!--// 하단 -->
+    <div id="wrap">   
+        <button id="bt">back</button>
+        <button id="bt2">forward</button>
+        <button id="bt3">go</button>
     </div>
 </body>
+
 </html>
-<script src="js/script.js"></script>
