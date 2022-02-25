@@ -22,20 +22,80 @@ img {
 }
 
 html {
-    background-color: green;
-    font-size: 30px;
-    /* overflow-x: hidden; */
+    font-size: 10px;   
 }
 
 body {
     font-size: 1rem;
 }
 
-/* 공통 요소 */
+/* 공통요소 */
 .clearfix::after {
     content: '';
+    position: relative;
     display: block;
     width: 100%;
-    clear:both;
+    clear: both;
 }
-.container {}
+
+.container {
+    position: relative;
+    display: block;
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+body {
+    font-size: 1.2rem;
+}
+.wrap {
+    position: relative;
+    display: block;
+    background-color: hotpink;
+}
+.page {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+h2 {
+    position: relative;
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.visual {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.profile {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.portfolio {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.life {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contact {
+    position: relative;
+    display: block;
+    width: 100vw;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
