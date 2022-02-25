@@ -1,0 +1,210 @@
+@charset 'utf-8';
+@import url('notosanskr/NotoSansKR.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline-style: none; */
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+li {
+    list-style: none;
+}
+
+html {
+    /* font-size: 10px; */
+}
+
+/* 공통요소 */
+.clearfix::after {
+    content: '';
+    position: relative;
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.container {
+    position: relative;
+    display: block;
+
+    max-width: 1000px;
+    width: 100%;
+
+    margin: 0 auto;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrap {
+    position: relative;
+    display: block;
+}
+
+body {
+    /* font-size: 1rem; */
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+
+/* pc용 */
+.header {
+    position: relative;
+    display: block;
+    height: 100px;
+    background-color: pink;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+}
+
+.nav {
+    position: relative;
+    display: block;
+    width: 600px;
+    height: 40px;
+    background-color:red;
+}
+
+.etc {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: skyblue;
+    align-self: flex-start;
+}
+.m-bt {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.slide {
+    position: relative;
+    display: block;
+    height: 400px;
+    background-color: hotpink;
+}
+
+.board {
+    position: relative;
+    display: block;
+    height: 400px;
+    background-color: greenyellow;
+}
+.board .container {
+    display: flex;
+}
+.board-box {
+    position: relative;
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    flex-grow: 1;
+}
+.banner {
+    position: relative;
+    display: block;
+    height: 50px;
+    background-color: aqua;
+}
+
+.footer {
+    position: relative;
+    display: block;
+    height: 100px;
+    background-color: bisque;
+}
+
+/* 랩탑 */
+@media screen and (max-width: 1024px) {
+
+}
+
+/* 타블렛 */
+@media screen and (max-width: 790px) {
+    .nav, .etc {
+        display: none;
+    }
+
+    .m-bt {
+        display: block;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+
+    
+    .main {
+        flex-direction: row;
+    }
+
+    .slide, .board {
+        width: 50%;
+    }
+    .board-box:nth-child(1) {
+        width: 100%;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width: 480px) {
+
+    .main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .logo {
+        flex-grow: 1;
+    }
+
+    .slide, .board {
+        width: 100%;
+    }
+}

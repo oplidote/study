@@ -16,7 +16,9 @@
 ## IE에서 edge 브라우저 형태로 강제 렌더링 하도록하는  메타태그
 <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 웹 필수 구성요소 이다.
-
+# 반응형이란?
+  화면 너비에 맞게 레이아웃을 변경할 수 있다.
+  css를 적극적으로 활용함
 
 ## div : block
 # 미디어쿼리 주의사항
@@ -25,7 +27,7 @@
     상속 받고자 하지 않을시 none으로 따로 값을 지정
 
 2. 메타태그 뷰포트 필수
-    ex) <meta name = "viewport" content = "width=device-width, initial-scale=1.0"> 
+    ex) <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
         width=device-width : viewport(디바이스) 의 가로폭
         initial-scale=1.0  : 비율은 항상 1.0 
 
