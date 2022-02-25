@@ -135,18 +135,23 @@ body {
     height: 400px;
     background-color: greenyellow;
 }
+
 .board .container {
     display: flex;
 }
+
 .board-box {
     position: relative;
     display: block;
     height: 100%;
     background-color: #fff;
-    border-radius: 5px;
-    border: 2px solid #ccc;
+    border-radius: 5px;  
+    border: 2px solid #ccc; 
+    
     flex-grow: 1;
 }
+
+
 .banner {
     position: relative;
     display: block;
@@ -162,9 +167,7 @@ body {
 }
 
 /* 랩탑 */
-@media screen and (max-width: 1024px) {
-
-}
+@media screen and (max-width: 1024px) {}
 
 /* 타블렛 */
 @media screen and (max-width: 790px) {
@@ -188,20 +191,22 @@ body {
     .slide, .board {
         width: 50%;
     }
-    .board-box:nth-child(1) {
-        width: 100%;
-    }
+
 }
 
 /* 모바일 */
 @media screen and (max-width: 480px) {
 
-    .main {
-        flex-direction: column;
+    .header .container {
         justify-content: center;
     }
     .logo {
         flex-grow: 1;
+    }
+
+
+    .main {
+        flex-direction: column;
     }
 
     .slide, .board {
