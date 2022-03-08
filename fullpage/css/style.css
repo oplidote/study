@@ -51,33 +51,3 @@ body {
     font-size: 1rem;
     font-family: 'Noto Sans KR', sans-serif;
 }
-
-#menu {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-    display: block;
-    z-index: 1;
-}
-#menu a {
-    position: relative;
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    font-size: 20px;
-    font-weight: 800;
-
-}
-
-.page-1 {
-    background-color: red;
-}
-.page-2 {
-    background-color: green;
-}
-.page-3 {
-    background-color: blue;
-}
-.page-4 {
-    background-color: yellow;
-}
